@@ -1,0 +1,50 @@
+
+
+.h1{
+    font-size: 18px;
+    display: flex;
+    color: #9B59B6;
+    font-family: 'Josefin Sans';
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.h2{
+    font-size: 10px;
+    display: flex;
+    color: #9B59B6;
+    font-family: 'Josefin Sans';
+    position: absolute;
+}
+
+.Comment{
+    position: relative;
+    display: flex;
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    background-color: #FCFCFC;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.delete{
+cursor: pointer;
+position: absolute;
+top: 5px;
+right: 5px;
+}
+
+
+
+.posted{
+position: absolute;
+bottom: 0px;
+right: 5px;
+font-size: 10px;
+color: #9B59B6;
+font-family: 'Josefin Sans';
+}

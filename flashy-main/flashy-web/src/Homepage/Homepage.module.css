@@ -1,0 +1,102 @@
+
+.usernameMessage { 
+    font-size: 35px;
+    font-family: Josefin Sans, sans-serif;
+    color: #3b0764;
+    font-display: absolute;
+    padding-left: 20px;
+    margin-top: 0px;
+}
+
+.topButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.topLeftButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.topLeftButtons button {
+    background-color: transparent;
+    border: 0;
+    font-size: 22px;
+    font-family: Josefin Sans, sans-serif;
+    color: #8CD8E5;
+    cursor: pointer;
+}
+
+.topLeftButtons .selectedBtn {
+    color: #0FC9E7;
+    text-decoration: underline;
+}
+
+.addSetBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #97ecc5;
+    border: 1.5px solid #34d399;
+    box-shadow: none;
+    color: #9b59b6;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.setsContainer {
+    display: flex; 
+    align-items: center;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.setContainer {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.topRightButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin: 3px;
+   
+}
+.searchBar{
+    display: flex;
+    height: 40px;
+    gap: 10px;
+    margin-right: 40px;
+}
+
+.searchInput{
+    background-color: #f3e8ff;
+    border-color: #a855f7;
+    font-family: Josefin Sans, sans-serif;
+    color:  #3b0764;
+    width: 175px;
+}
+
+.filterSelect {
+    font-family: Josefin Sans, sans-serif;
+    border-color: #a855f7;
+    background-color: #f3e8ff;
+    color:  #3b0764;
+    border-radius: 8px;
+    cursor: pointer;
+    min-width: 100px;
+    padding-left: 5px;
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
+.h1{
+    font-size: 70px;
+    display: flex;
+    color: #9B59B6;
+    font-family: 'Josefin Sans';
+}
+
+.AdministerUser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgb(155, 89, 182) 0%, rgb(139, 102, 241) 100%);
+}
+
+.box
+{
+    padding: 30px 30px;
+    background-color: #f0f0f0; /* Grey background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    max-width: 500px;
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
+    background-color: #FDF2F8;
+    align-items: center;
+    
+    
+}
+
+.button
+{
+    border-radius: 10px;
+    background-color: #9B59B6;
+    border: none;
+    height: 50px;
+    width: 350px;
+    font-size: 25px;
+    color: white;
+    font-family: 'Josefin Sans';
+    cursor: pointer;
+}
+
+.adminMode {
+    background: linear-gradient(90deg, rgb(190, 20, 100) 40%, rgb(120, 74, 247) 110%);
+}
+
+
+
+
+

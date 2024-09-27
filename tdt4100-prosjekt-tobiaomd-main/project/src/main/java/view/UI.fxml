@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" minHeight="800.0" minWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-background-color: #999;" BorderPane.alignment="CENTER">
+         <children>
+            <ToggleButton fx:id="drowbtn" minWidth="90.0" mnemonicParsing="false" prefWidth="100.0" text="Draw" textAlignment="CENTER">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group1" />
+               </toggleGroup>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ToggleButton>
+            <ToggleButton fx:id="rubberbtn" minWidth="90.0" mnemonicParsing="false" prefWidth="100.0" text="Rubber" toggleGroup="$group1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ToggleButton>
+            <ToggleButton fx:id="linebtn" minWidth="90.0" mnemonicParsing="false" prefWidth="100.0" text="Line" toggleGroup="$group1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ToggleButton>
+            <ToggleButton fx:id="rectbtn" minWidth="90.0" mnemonicParsing="false" prefWidth="100.0" text="Rectangle" toggleGroup="$group1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ToggleButton>
+            <ToggleButton fx:id="squabtn" minWidth="90.0" mnemonicParsing="false" prefWidth="100.0" text="Square" toggleGroup="$group1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="circlebtn" minWidth="90.0" mnemonicParsing="false" prefWidth="100.0" text="Circle" toggleGroup="$group1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ToggleButton>
+            <ToggleButton fx:id="triabtn" minWidth="90.0" mnemonicParsing="false" prefWidth="100.0" text="Triangle" toggleGroup="$group1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </ToggleButton>
+            <ToggleButton fx:id="textbtn" minWidth="90.0" mnemonicParsing="false" prefWidth="100.0" text="Text" toggleGroup="$group1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ToggleButton>
+            <ToggleButton minWidth="90.0" mnemonicParsing="false" onAction="#clearIsClicked" prefWidth="100.0" text="Clear" toggleGroup="$group1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ToggleButton>
+            <TextArea fx:id="text" maxHeight="50.0" maxWidth="90.0" minHeight="50.0" minWidth="90.0" prefHeight="200.0" prefWidth="200.0" />
+            <Label fx:id="line_color" text="Line Color" />
+            <ColorPicker fx:id="cpLine" onAction="#setLineColor">
+               <value>
+                  <Color />
+               </value>
+            </ColorPicker>
+            <Label fx:id="fill_color" text="Fill Color" />
+            <ColorPicker fx:id="cpFill" onAction="#setFillColor">
+               <value>
+                  <Color red="1.0" green="1.0" blue="1.0" opacity="0.0" />
+               </value>
+            </ColorPicker>
+            <Label fx:id="line_width" text="3.0" />
+            <Slider fx:id="slider" max="50.0" min="1.0" showTickLabels="true" showTickMarks="true" value="3.0" />
+            <Button fx:id="undo" minWidth="90.0" mnemonicParsing="false" onAction="#undoIsClicked" prefWidth="100.0" style="-fx-background-color: #666;" text="Undo" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="redo" minWidth="90.0" mnemonicParsing="false" onAction="#redoIsClicked" prefWidth="100.0" style="-fx-background-color: #666;" text="Redo" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="open" minWidth="90.0" mnemonicParsing="false" onAction="#openIsClicked" prefWidth="100.0" style="-fx-background-color: #80334d;" text="Open" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="save" minWidth="90.0" mnemonicParsing="false" onAction="#saveIsClicked" prefWidth="100.0" style="-fx-background-color: #80334d;" text="Save" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <Canvas fx:id="canvas" height="790.0" width="1080.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-background-color: #999;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="brushName" minWidth="90.0" prefWidth="100.0" />
+            <Button minWidth="90.0" mnemonicParsing="false" onAction="#addBrush" prefWidth="100.0" text="Add Brush">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+            <Button minWidth="90.0" mnemonicParsing="false" onAction="#removeBrush" prefWidth="100.0" text="Remove">
+               <font>
+                  <Font size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <VBox fx:id="brushBox" prefHeight="673.0" prefWidth="98.0" spacing="10.0">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </right>
+</BorderPane>

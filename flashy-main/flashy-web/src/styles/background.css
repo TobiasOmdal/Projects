@@ -1,0 +1,28 @@
+
+:root {
+    --background-color: linear-gradient(
+  90deg,
+  hsl(282deg 39% 53%) 0%,
+  hsl(281deg 41% 54%) 5%,
+  hsl(280deg 42% 54%) 10%,
+  hsl(279deg 44% 55%) 14%,
+  hsl(278deg 45% 56%) 19%,
+  hsl(276deg 47% 56%) 24%,
+  hsl(275deg 48% 57%) 29%,
+  hsl(274deg 50% 57%) 33%,
+  hsl(273deg 52% 58%) 38%,
+  hsl(272deg 54% 59%) 43%,
+  hsl(271deg 55% 59%) 48%,
+  hsl(269deg 57% 60%) 52%,
+  hsl(268deg 59% 60%) 57%,
+  hsl(267deg 61% 61%) 62%,
+  hsl(266deg 63% 62%) 67%,
+  hsl(265deg 66% 62%) 71%,
+  hsl(263deg 68% 63%) 76%,
+  hsl(262deg 70% 64%) 81%,
+  hsl(261deg 73% 65%) 86%,
+  hsl(260deg 76% 65%) 90%,
+  hsl(258deg 78% 66%) 95%,
+  hsl(257deg 81% 67%) 100%
+);
+}

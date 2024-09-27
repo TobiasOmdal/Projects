@@ -1,0 +1,110 @@
+
+.SetPlayer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    width: 100vw;
+    font-family: Josefin Sans, sans-serif;
+    background: #faf5ff;
+    color: #581c87;
+    overflow: hidden;
+}
+
+.mainPlayer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.changeFlashcardBtns {
+    border: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    color: #581c87;
+}
+
+.endFlashcardBtnContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.endFlashcardBtnContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.endFlashcardBtns {
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #581c87;
+}
+
+.endFlashcardBtns:disabled {
+    color: gray;
+}
+
+.heading {
+    font-size: 32px;
+    font-weight: 300;
+    font-family: Josefin Sans, sans-serif;
+    margin: 0;
+}
+
+.headingHard {
+    color: #581c87;
+    margin: 5px;
+    
+}
+
+.flagHard {
+    color: red;
+    fill: red;
+    margin: 5px;
+}
+
+.numberLbl {
+    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-family: Josefin Sans, sans-serif;
+    font-weight: 200;
+}
+
+.progressBarContainer {
+    width: 33%;
+    background-color: #93c5fd;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    /* Sexy padding around the progress bar */
+    overflow: hidden;
+}
+
+.progressBar {
+    height: 25px;
+    background-color: #1e40af;
+}
+
+
+.titleOfCard {
+    display: flex;
+    justify-content: 30px;
+    align-items: 30px;
+    justify-items: 20px;
+}
+

@@ -1,0 +1,78 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 100px; /* for header height */
+}
+
+.spacedForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+}
+
+.spacedForm input[type="text"], .spacedForm input[type="password"] {
+    padding: 5px 10px;
+    border: 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.spacedForm input[type="text"]:focus, .spacedForm input[type="password"]:focus {
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+}
+
+.spacedForm input[type="text"]::placeholder, .spacedForm input[type="password"]::placeholder {
+    user-select: none;
+}
+
+.spacedForm input[type="submit"] {
+    cursor: pointer;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #6d3aad;
+    width: 100%;
+    color: #ffffff;
+}
+
+.spacedForm h1 {
+    padding-left: 10px;
+    font-weight: bold;
+    /* Makes the text bold */
+    margin: 0;
+    color: #6d3aad;
+    font-size: 24px;
+    user-select: none;
+}
+
+.spacedForm .error {
+    text-align: right;
+}
+
+.spacedForm .error p {
+    text-wrap: pretty;
+    text-align: left;
+    margin: 0;
+    margin-top: 3px;
+    color: rgb(255, 0, 4);
+}
+
+.flashyLogo {
+    font-family: 'Josefin Sans', sans-serif; /* Ensure to include a fallback font */
+    font-style: normal;
+    font-weight: 700; /* Bold */
+    font-size: 3vw; /* Reduced font size to make the logo smaller */
+    line-height: normal; /* Adjust line-height to fit the new font size */
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #0FC9E7; /* Cyan-like color */
+}
+
+
+

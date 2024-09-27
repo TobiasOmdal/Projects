@@ -1,0 +1,167 @@
+
+
+.FrontPageSet {
+    background-color: #6d3aad;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    overflow: hidden;
+    height: 250px;
+}
+
+.heading {
+    display: flex; 
+    font-family: Josefin Sans, sans-serif;   
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.name {
+    font-size: 22px;
+    font-family: Josefin Sans, sans-serif;
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.descriptionText {
+    font-family: Josefin Sans, sans-serif;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.numberText {
+    font-family: Josefin Sans, sans-serif;
+    margin: 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editBtn {
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: 14px;
+    font-family: Josefin Sans, sans-serif;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.flashcardContainer {
+    perspective: 1000px;
+    /* Adds depth to the flip effect */
+    width: 300px;
+    /* Adjust width as needed */
+    height: 200px;
+    /* Adjust height as needed */
+}
+
+.flashcard {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    /* Hide the flashcard container */
+}
+
+.flashcard.flipped {
+    transform: rotateY(180deg);
+    /* Flip the card on click */
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    /* Hide the back side of the card when facing away */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Josefin Sans, sans-serif;
+    background-color: #6d3aad;
+    /* Same color as the set */
+}
+
+.back {
+    transform: rotateY(180deg);
+    /* Rotate the back side to face the back initially */
+}
+
+.header {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.content {
+    text-align: center;
+}
+
+.visibilityChangeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px;
+    color: #fff;
+}
+
+.rightButtonDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.socialInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: Josefin Sans, sans-serif;
+    padding-top: 10px;
+}
+
+.heartIcon,
+.commentIcon {
+    color: #fff;
+}
+
+.iconText {
+    margin-left:-10px;
+}
+
+.headerImage {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-top: -25px;
+    height: 100px;
+    object-fit: cover;
+    max-height: 100px;
+}

@@ -1,0 +1,31 @@
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadLabelBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.image {
+    height: 50px;
+    width: auto;
+    max-width: 40px;
+}
+
+.removeBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+}
+

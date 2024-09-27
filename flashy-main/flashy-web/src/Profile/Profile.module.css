@@ -1,0 +1,66 @@
+.layout {
+    width: 100vw;
+}
+
+.myProfileBox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+
+}
+.myProfile { 
+    font-size: 40px;
+    font-family: Josefin Sans, sans-serif;
+    color: #3b0764;
+    letter-spacing: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+.profilePictureBox{
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+
+}
+
+.profilePicture {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    color: #22d3ee;
+    border-radius: 10px;
+    border-color: #7e22ce;
+}
+
+.button{ 
+    width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+    align-items: center;
+    color:#faf5ff;
+    border: 2px solid transparent;
+    font-weight: bold;
+    font-family: Josefin Sans, sans-serif;
+    font-size: 20px;
+    background-color: #a855f7;
+    cursor: pointer;
+    border-color: #7e22ce;
+    justify-content: center;
+    
+}
+
+.buttonBox {
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    margin-top: 50px;
+    width: 100%;
+}

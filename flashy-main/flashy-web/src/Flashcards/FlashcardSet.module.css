@@ -1,0 +1,160 @@
+
+.layout {
+    background-image: linear-gradient(90deg, rgb(155, 89, 182) 0%, rgb(139, 102, 241) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.form {
+    background-color: #fcfcfc;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-family: Josefin Sans, sans-serif;
+}
+
+.heading {
+    color: #0fc9e7;
+}
+
+input, .desc, .select {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.desc {
+    resize: none;
+}
+
+.flashcardContainer {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.flashcardInput {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.flashcardInput:focus {
+}
+
+.flashcardDeleteBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    padding-right: 0px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.title {
+    width: 100%;
+    font-family: Josefin Sans, sans-serif;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.visibility {
+    margin-bottom: 10px;
+}
+
+.visibility label {
+    margin-right: 20px;
+}
+
+.select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.desc {
+    width: 100%;
+    height: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.fileInputLabel {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 10%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+
+    font-size: 12px;
+    height: 40px;
+}
+
+.fileInputLabel span {
+    position: relative;
+    z-index: 1;
+}
+
+.fileInput {
+    display: none;
+}
+
+.fileInputLabel:hover {
+    background-color: #0056b3;
+}
+
+.addFlashcardBtn {
+    border: 0;
+    box-shadow: 0;
+    cursor: pointer;
+    padding: 8px 20px;
+    background-color: #0fc9e7;
+    color: #fff;
+}
+
+.submitBtn {
+    border: 0;
+    box-shadow: 0;
+    cursor: pointer;
+    padding: 8px 20px;
+    background-color: #9856b3;
+    color: #fff;
+}
+
+.submitContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.adminMode {
+    background: linear-gradient(90deg, rgb(190, 20, 100) 40%, rgb(120, 74, 247) 110%);
+}
