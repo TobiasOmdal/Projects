@@ -1,3 +1,5 @@
+NB! Copy from a group project done in collaboration with 6 others. I mainly worked on audio integration, scripts, drivers, testing and debugging. 
+
 # FFI-STT
 
 This project is an automatic Speech-to-text application that runs on radio systems to minimize bandwidth usage by sending text instead of audio data.
